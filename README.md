@@ -1,6 +1,9 @@
 # gsheet_openai_py
 Python application to process questions with openAI
 
+## Requirements
+This project runs off of python 3.11.0, you can download Python here https://www.python.org/downloads/
+
 ## Environment Variables
 This project relies on API keys in order to access Google sheets as well as openAI (https://chat.openai.com/), in order to reference these variables, create a file called .env in the root level of this repo (where this README.md is located) for openAI's API key (instructions here https://beta.openai.com/docs/quickstart/build-your-application)
 
