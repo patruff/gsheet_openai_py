@@ -6,7 +6,8 @@ This project relies on API keys in order to access Google sheets as well as open
 
 The .env file should look like
 
-```FLASK_APP=app
+```
+FLASK_APP=app
 FLASK_ENV=development
 OPENAI_API_KEY=
 ```
