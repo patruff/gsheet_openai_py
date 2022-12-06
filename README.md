@@ -8,7 +8,8 @@ The .env file should look like
 
 ```FLASK_APP=app
 FLASK_ENV=development
-OPENAI_API_KEY=```
+OPENAI_API_KEY=
+```
 
 and you should input your API key after OPENAI_API_KEY= like
 OPENAI_API_KEY=abcdmyapikeyhere
