@@ -8,11 +8,19 @@ This project runs off of python 3.11.0, you can download Python here https://www
 
 After downloading python 3.11 you can check it exists by typing python --version (you should get back the python version 3.11.0)
 
+$python3 --version
+
+After verifying you have python installed, go to this directory and run
+
+$pip3 install -r requirements.txt
+
+This will install all of the libraries you need to run the app. After that make sure to add the .env file and the credentials.json file to the same directory as this README. Then you should be ready to run the app.
+
 To run the app simply run
 
 $python3 app.py
 
-And this will cause the app to begin to run (forever) until you stop the app by inputting any key followed by a return (ENTER)
+And this will cause the app to begin to run (forever) until you stop the app by inputting any key followed by a return (ENTER).
 
 ## Environment Variables
 This project relies on API keys in order to access Google sheets as well as openAI (https://chat.openai.com/), in order to reference these variables, create a file called .env in the root level of this repo (where this README.md is located) for openAI's API key (instructions here https://beta.openai.com/docs/quickstart/build-your-application)
