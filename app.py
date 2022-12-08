@@ -76,21 +76,29 @@ def my_forever_while():
             # so first need to get all of the values/questions
             questions_list = get_values(spreadsheet_id, "A2:A100")
 
+            print("length of questions list is ")
+            print(str(len(questions_list)))
+
             # read the number of questions asked and stop
             # if no new questions
             fileread = open("questions_asked.txt", "r")
             questions_asked_already = fileread.read()
             fileread.close()
 
-            if (str(len(questions_list))) == questions_asked_already:
+            print("questions asked already is " + questions_asked_already)
+            #questions_asked_total = int(questions_asked_already) + len(questions_list)
+
+            if len(questions_list) <= int(questions_asked_already):
               print("already asked all questions")
               print("the current time is ", current_time)
 
             else:
-                # write the number of questions already asked
+                # write the number of questions asked
                 filewrite = open('questions_asked.txt', 'w')
                 filewrite.write(str(len(questions_list)))
                 filewrite.close()
+
+
 
                 for question in questions_list:
                   print(question)
@@ -99,7 +107,7 @@ def my_forever_while():
                 start_range = "B2"
                 end_range = ""
 
-                end_range = str(len(questions_list) + 1)
+                end_range = len(questions_list) + 1
 
                 update_range = "{}:B{}".format(start_range, end_range)
 
@@ -109,8 +117,10 @@ def my_forever_while():
                 for question in questions_list:
                   ai_response = openai_response(question)
                   ai_response_no_newline = ai_response.replace("\n", "")
+                  answer_list.append([[ai_response_no_newline.strip()]])
+                
 
-                answer_list.append([[ai_response_no_newline.strip()]])
+                print(answer_list)
 
                 # use the credentials.json file
                 service = build('sheets', 'v4', credentials=creds)
