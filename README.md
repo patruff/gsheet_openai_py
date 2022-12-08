@@ -30,6 +30,6 @@ OPENAI_API_KEY=abcdmyapikeyhere (no spaces)
 also in this repo is an example_env.txt that you can copy and then rename to .env and just replace the values that are there (the final file will just be .env)
 
 ## Google Sheets
-For the google sheets API you'll need your credentials in a file called credentials.json at the root level of this repo (again, the same directory as this README), for instructions on how to generate this credentials.json file see my website post here (post URL)
+For the google sheets API you'll need your credentials in a file called credentials.json at the root level of this repo (again, the same directory as this README), for instructions on how to generate this credentials.json file see my website post here (https://mljar.com/blog/authenticate-python-google-sheets-service-account-json-credentials/)
 
 
