@@ -1,0 +1,2 @@
+OPENAI_API_KEY=sk-9Padjadladkjaldkjadja7
+SPREADSHEET_ID=1qCAUDd_ajdajd38adMME
