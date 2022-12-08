@@ -76,11 +76,6 @@ def my_forever_while():
             # so first need to get all of the values/questions
             questions_list = get_values(spreadsheet_id, "A2:A100")
 
-            # write the number of questions already asked
-            filewrite = open('questions_asked.txt', 'w')
-            filewrite.write(str(len(questions_list)))
-            filewrite.close()
-
             # read the number of questions asked and stop
             # if no new questions
             fileread = open("questions_asked.txt", "r")
@@ -92,6 +87,11 @@ def my_forever_while():
               print("the current time is ", current_time)
 
             else:
+                # write the number of questions already asked
+                filewrite = open('questions_asked.txt', 'w')
+                filewrite.write(str(len(questions_list)))
+                filewrite.close()
+
                 for question in questions_list:
                   print(question)
 
