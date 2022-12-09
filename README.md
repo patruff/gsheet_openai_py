@@ -8,17 +8,17 @@ This project runs off of python 3.11.0, you can download Python here https://www
 
 After downloading python 3.11 you can check it exists by typing python --version (you should get back the python version 3.11.0)
 
-$python3 --version
+$python --version
 
-After verifying you have python installed, go to this directory and run
+After verifying you have python installed, go to the directory of this repo and run
 
-$pip3 install -r requirements.txt
+$pip install -r requirements.txt
 
-This will install all of the libraries you need to run the app. After that make sure to add the .env file and the credentials.json file to the same directory as this README. Then you should be ready to run the app.
+This will install all of the libraries you need to run the app. After that make sure to add the .env file and the credentials.json (the JSON from Google that you rename to credentials.json) file to the same directory as this README. Then you should be ready to run the app.
 
 To run the app simply run
 
-$python3 app.py
+$python app.py
 
 And this will cause the app to begin to run (forever) until you stop the app by inputting any key followed by a return (ENTER).
 
@@ -38,6 +38,6 @@ OPENAI_API_KEY=abcdmyapikeyhere (no spaces)
 also in this repo is an example_env.txt that you can copy and then rename to .env and just replace the values that are there (the final file will just be .env)
 
 ## Google Sheets
-For the google sheets API you'll need your credentials in a file called credentials.json at the root level of this repo (again, the same directory as this README), for instructions on how to generate this credentials.json file see my website post here (https://mljar.com/blog/authenticate-python-google-sheets-service-account-json-credentials/)
+For the google sheets API you'll need your credentials in a file called credentials.json at the root level of this repo (again, the same directory as this README), for instructions on how to generate this credentials.json file see my website post here (https://mljar.com/blog/authenticate-python-google-sheets-service-account-json-credentials/), you'll need to rename the file you get from those steps to credentials.json and put the file into the directory of this repo
 
 
