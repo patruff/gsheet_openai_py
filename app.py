@@ -52,7 +52,7 @@ def get_values(spreadsheet_id, range_name):
 
 def openai_response(input_prompt):
   response = openai.Completion.create(
-    model="text-davinci-002",
+    model="text-davinci-003",
     prompt=input_prompt,
     temperature=0.7,
     )
